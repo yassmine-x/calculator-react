@@ -1,0 +1,126 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "screen"
+    "buttons";
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 3fr;
+}
+
+.buttons {
+  display: grid;
+  grid-area: buttons;
+  grid-template-areas: "buttonsLeft buttonsRight";
+  grid-template-columns: 1fr 1fr;
+}
+
+.screen {
+  grid-area: screen;
+}
+
+.button1 {
+  grid-area: one;
+}
+.button2 {
+  grid-area: two;
+}
+.button3 {
+  grid-area: three;
+}
+.button4 {
+  grid-area: four;
+}
+.button5 {
+  grid-area: five;
+}
+.button6 {
+  grid-area: six;
+}
+.button7 {
+  grid-area: seven;
+}
+.button8 {
+  grid-area: eight;
+}
+.button9 {
+  grid-area: nine;
+}
+.button0 {
+  grid-area: zero;
+}
+
+.buttonEquals {
+  grid-area: equals;
+}
+
+.buttonAdd {
+  grid-area: add;
+}
+.buttonSubtract {
+  grid-area: subtract;
+}
+.buttonMultiply {
+  grid-area: multiply;
+}
+.buttonDivide {
+  grid-area: divide;
+}
+.buttonac {
+  grid-area: ac;
+}
+.buttonce {
+  grid-area: ce;
+}
+
+/* .operations {
+  display: grid;
+  grid-template-areas:
+    "add subtract"
+    "multiply divide";
+} */
+.buttonsLeft {
+  grid-area: buttonsLeft;
+}
+
+.buttonsRight {
+  grid-area: buttonsRight;
+}
