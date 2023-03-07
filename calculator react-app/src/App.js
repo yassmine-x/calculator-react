@@ -1,14 +1,8 @@
-import logo from "./logo.svg";
 import "./App.css";
-import Buttons from "./components/Buttons";
+import Wrapper from "./components/Wrapper";
 
 function App() {
-  return (
-    <div className="container">
-      This is my react app!
-      <Buttons />
-    </div>
-  );
+  return <Wrapper />;
 }
 
 export default App;

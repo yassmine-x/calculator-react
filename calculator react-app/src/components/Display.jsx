@@ -1,3 +1,3 @@
-export default function Display() {
-  return <div className="screen">this is the screen</div>;
+export default function Display({ value }) {
+  return <div className="screen">{value}</div>;
 }
